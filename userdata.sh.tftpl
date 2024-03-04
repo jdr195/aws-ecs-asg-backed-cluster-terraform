@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+cat <<EOF >> /etc/ecs/ecs.config
+ECS_BACKEND_HOST=
+ECS_CLUSTER=${cluster_name}
+ECS_GMSA_SUPPORTED=true
+ECS_WARM_POOLS_CHECK=true
+EOF
